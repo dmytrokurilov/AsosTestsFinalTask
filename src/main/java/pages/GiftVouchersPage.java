@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class GiftVouchersPage extends BasePage {
 
-    @FindBy(xpath = "//div[@class='selectionItem-2kkXZ voucher-voucherStyleId-29Uma selected-3nCgY']")
+    @FindBy(xpath = "//div[@class='voucherp-selectionItem-2kkXZ voucherp-voucher-voucherStyleId-29Uma voucherp-selected-3nCgY']")
     private WebElement orangeVoucherButton;
 
     @FindBy(xpath = "//label[@for='voucher-value-20']")

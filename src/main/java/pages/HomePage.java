@@ -57,7 +57,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//a[@data-testid='help']")
     private WebElement helpLink;
 
-    @FindBy(xpath = "//a[contains(text(),'Mobile and ASOS Apps')]")
+    @FindBy(xpath = "//a[contains(text(),'Mobile and ASOS apps')]")
     private WebElement appsLinkInFooter;
 
     @FindBy(xpath = "//button[@data-testid='search-button-inline']")

@@ -5,9 +5,9 @@ Feature: Men Page
     Given User opens '<homePage>' page
     When User clicks Men page
     And User waits men page opens
-    Then User checks that element '<skinnyJeansButton>' is present on page
+    Then User checks that element '<freshFindsButton>' is present on page
 
 
     Examples:
-      | homePage         | skinnyJeansButton |
-      | https://asos.com | SKINNY JEANS      |
+      | homePage         | freshFindsButton |
+      | https://asos.com | Fresh finds      |

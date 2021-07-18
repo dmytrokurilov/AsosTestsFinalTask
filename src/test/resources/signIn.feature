@@ -21,7 +21,7 @@ Feature: Sign in
     When User clicks My account icon
     And User checks visibility Sign In button
     And User clicks Sign In button
-    And User clicks New to ASOS header button
+    And User clicks Join header button
     And User clicks Join ASOS button
     Then User checks that Email error message '<errorMessage>' is displayed
 

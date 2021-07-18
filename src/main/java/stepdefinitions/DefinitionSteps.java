@@ -208,15 +208,16 @@ public class DefinitionSteps {
     }
 
     @Then("User checks that element {string} is present on page")
-    public void userChecksThatElementSkinnyJeansButtonIsPresentOnPage(final String expectedText) {
+    public void userChecksThatElementFreshFindsButtonIsPresentOnPage(final String expectedText) {
         menPage = pageFactoryManager.getMenPage();
-        assertEquals(menPage.getTextOfSkinnyJeansButton(), expectedText);
+        assertEquals(menPage.getTextOfFreshFindsButton(), expectedText);
     }
 
-    @And("User clicks New to ASOS header button")
-    public void userClicksNewToASOSHeaderButton() {
+
+    @And("User clicks Join header button")
+    public void userClicksJoinHeaderButton() {
         signInPage = pageFactoryManager.getSignInPage();
-        signInPage.clickNewToAsosHeader();
+        signInPage.clickJoinHeader();
     }
 
     @And("User clicks Join ASOS button")
@@ -292,6 +293,7 @@ public class DefinitionSteps {
     public void tearDown() {
         driver.close();
     }
+
 }
 
 

@@ -15,11 +15,11 @@ public class SignInPage extends BasePage {
     @FindBy(xpath = "//input[@type='submit']")
     private WebElement signInButton;
 
-    @FindBy(xpath = "//li[contains(text(),'Sorry, we cannot log you in right now')]")
-    private WebElement loginErrorMessage;
+    @FindBy(xpath = "//div[contains(text(),'Before you log in, we just need to check you’re an actual human and not a robot. And, by ‘robot’, we mean a pesky internet bot, not one of those sci-fi ones...')]")
+    private WebElement robotMessage;
 
-    @FindBy(xpath = "//a[contains(text(),'New to ASOS?')]")
-    private WebElement newToAsosHeader;
+    @FindBy(xpath = "//a[contains(text(), 'Join')]")
+    private WebElement joinHeader;
 
     @FindBy(xpath = "//input[@aria-label='Join ASOS']")
     private WebElement joinAsosButton;
@@ -46,11 +46,11 @@ public class SignInPage extends BasePage {
     }
 
     public String getTextOfLoginErrorMessage() {
-        return loginErrorMessage.getText();
+        return robotMessage.getText();
     }
 
-    public void clickNewToAsosHeader() {
-        newToAsosHeader.click();
+    public void clickJoinHeader() {
+        joinHeader.click();
     }
 
     public void clickJoinASosButton() {

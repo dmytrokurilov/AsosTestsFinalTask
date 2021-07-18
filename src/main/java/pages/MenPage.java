@@ -6,15 +6,15 @@ import org.openqa.selenium.support.FindBy;
 
 public class MenPage extends BasePage {
 
-    @FindBy(xpath = "//p[contains(text(),'SKINNY JEANS')]")
-    private WebElement skinnyJeansButton;
+    @FindBy(xpath = "//h2[@class='hero-title__text']//span[contains(text(), 'Fresh finds')]")
+    private WebElement freshFindsButton;
 
     public MenPage(WebDriver driver) {
         super(driver);
     }
 
-    public String getTextOfSkinnyJeansButton() {
-        return skinnyJeansButton.getText();
+    public String getTextOfFreshFindsButton() {
+        return freshFindsButton.getText();
     }
 
 }
